@@ -1,0 +1,92 @@
+Thanks for your interest in contributing to Horizon Launcher! We have a few guidelines to make sure that your pull request is accepted and merged.
+
+{\bfseries Note that A\+L\+L pull requests must be opened on the \textquotesingle{}dev\textquotesingle{} branch.}
+
+\subsection*{Official Coding Style}
+
+
+\begin{DoxyItemize}
+\item Directories (folders), classes (as well as their source and header files), structs, and enumerators should be all formatted in Pascal\+Case.
+\item Functions, methods, and variables should be formatted in mixed\+Case.
+\begin{DoxyItemize}
+\item Constant variables should be prepended with {\ttfamily c\+\_\+}\+: {\ttfamily c\+\_\+some\+Value}
+\item Global variables (avoid) should be prepended with {\ttfamily g\+\_\+}\+: {\ttfamily g\+\_\+log\+Counter}
+\end{DoxyItemize}
+\item Exceptions to the above include standard overrides and conforming to existing C/\+C++ entities.
+\item Pointers should be formatted with the {\ttfamily $\ast$} operator aligned to the type\+: {\ttfamily int$\ast$ ptr}
+\item We use the Allman indentation style\+: 
+\begin{DoxyCode}
+1 \{C++\}
+2 void miracleSort(FancyArray<int> numGroup)
+3 \{
+4     while (numGroup.isUnsorted())
+5     \{
+6         sleep(10000000000);
+7     \}
+8 \}
+\end{DoxyCode}
+
+\item Include directives for both header and source files should be in the following order, with a line break after each grouping\+:
+\begin{DoxyEnumerate}
+\item Local headers (interface first, if applicable)
+\item Headers from third-\/party libraries (i.\+e. Qt, Navajo, etc.)
+\item C/\+C++ system headers
+\item Conditional / O\+S-\/dependent inclusions
+\end{DoxyEnumerate}
+\item Conditional and iterative statements should include a space, and should always be bracketed\+: 
+\begin{DoxyCode}
+1 \{C++\}
+2 while/if (a > 3) 
+3 \{
+4     // Logic
+5 \}
+\end{DoxyCode}
+
+\item Use only spaces, and indent 4 spaces at a time. We use spaces for indentation. Do not use tabs in your code. You should set your editor to emit spaces when you hit the tab key.
+\end{DoxyItemize}
+
+\subsubsection*{Precautions}
+
+
+\begin{DoxyItemize}
+\item Every header file must have the \#pragma once directive as a multiple inclusion guard (header guard).
+\item Avoid multiple inheritance if at all possible, especially with Qt classes.
+\item Keep your code well documented, but don\textquotesingle{}t go overboard. Classes and involved functions should be {\bfseries described} in the interface and {\bfseries explained} in the implementation.
+\item Try to keep functions short -- if a given function reaches 100 lines in length, consider splitting it up into smaller pieces.
+\item For all else, refer to the \href{https://google-styleguide.googlecode.com/svn/trunk/cppguide.html}{\tt Google C++ Style Guide}
+\end{DoxyItemize}
+
+\subsection*{Pull Requests}
+
+
+\begin{DoxyItemize}
+\item Commit and push often -\/ avoid committing huge amounts of code at one time.
+\item Make sure any upstream changes are merged with your branch {\itshape before} sumitting a pull request. Sort out as many conflicts as possible on your end.
+\item Each pull request will be reviewed by at least two members of the team. Be patient.
+\begin{DoxyItemize}
+\item If your changes are O\+S-\/dependent, or you suspect that there may be conflict in that regard, please make that clear.
+\item Please don’t open a pull request that adds entirely new features or aesthetic -\/ most of this will be decided by the U\+I team. P\+Rs should extend or complement existing functionality.
+\end{DoxyItemize}
+\item Official releases will be reviewed by members of all teams, and confirmed to function properly on several different operating systems and desktop environments.
+\end{DoxyItemize}
+
+\subsection*{Comments}
+
+
+\begin{DoxyItemize}
+\item Any new functions \+\_\+\+\_\+\+\_\+must\+\_\+\+\_\+\+\_\+ contain full Qt-\/style doxygen comments. See \href{http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html#cppblock}{\tt here} and scroll down for an example.
+\item Any modifications to existing funtions, ie adding/removing parameters, adjusting return type, changing functionality, $\ast$\+\_\+must\+\_\+$\ast$ also contain the relevant changes to the function at hand.
+\end{DoxyItemize}
+
+\subsection*{Clang Format}
+
+To automate this style, some of our team use \href{http://clang.llvm.org/docs/ClangFormat.html}{\tt clang-\/format} with the below setup\+: 
+\begin{DoxyCode}
+1 BasedOnStyle: "Google"  
+2 IndentWidth: 4
+3 UseTab: Never   
+4 BreakBeforeBraces: Allman  
+5 PointerAlignment: Left
+6 ColumnLimit: 0
+\end{DoxyCode}
+ 
