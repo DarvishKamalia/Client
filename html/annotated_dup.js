@@ -1,0 +1,28 @@
+var annotated_dup =
+[
+    [ "AddGameWizard", "class_add_game_wizard.html", "class_add_game_wizard" ],
+    [ "BorderlessWindow", "class_borderless_window.html", "class_borderless_window" ],
+    [ "BuddyList", "class_buddy_list.html", "class_buddy_list" ],
+    [ "BuddyWidget", "class_buddy_widget.html", "class_buddy_widget" ],
+    [ "Community", "class_community.html", "class_community" ],
+    [ "Database", "class_database.html", "class_database" ],
+    [ "DRMPage", "class_d_r_m_page.html", "class_d_r_m_page" ],
+    [ "DRMSetupWizard", "class_d_r_m_setup_wizard.html", "class_d_r_m_setup_wizard" ],
+    [ "FinalPage", "class_final_page.html", "class_final_page" ],
+    [ "Game", "struct_game.html", "struct_game" ],
+    [ "Homepage", "class_homepage.html", "class_homepage" ],
+    [ "InfoPage", "class_info_page.html", "class_info_page" ],
+    [ "InitPage", "class_init_page.html", "class_init_page" ],
+    [ "IntroPage", "class_intro_page.html", "class_intro_page" ],
+    [ "LastPage", "class_last_page.html", "class_last_page" ],
+    [ "Library", "class_library.html", "class_library" ],
+    [ "MainPanel", "class_main_panel.html", "class_main_panel" ],
+    [ "ResultsPage", "class_results_page.html", "class_results_page" ],
+    [ "Settings", "class_settings.html", "class_settings" ],
+    [ "Sidebar", "class_sidebar.html", "class_sidebar" ],
+    [ "TabWidget", "class_tab_widget.html", "class_tab_widget" ],
+    [ "UnixPanel", "class_unix_panel.html", "class_unix_panel" ],
+    [ "UnixWindow", "class_unix_window.html", "class_unix_window" ],
+    [ "WinPanel", "class_win_panel.html", "class_win_panel" ],
+    [ "WinWindow", "class_win_window.html", "class_win_window" ]
+];

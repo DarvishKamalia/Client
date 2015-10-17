@@ -1,0 +1,74 @@
+\hypertarget{class_main_panel}{}\section{Main\+Panel Class Reference}
+\label{class_main_panel}\index{Main\+Panel@{Main\+Panel}}
+
+
+{\ttfamily \#include $<$Main\+Panel.\+h$>$}
+
+Inheritance diagram for Main\+Panel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_main_panel}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_main_panel_a5a9a0b381327e480b90ac01ce95f8006}{}virtual void {\bfseries push\+Button\+Minimize} ()=0\label{class_main_panel_a5a9a0b381327e480b90ac01ce95f8006}
+
+\item 
+\hypertarget{class_main_panel_aba28a15015874114feea84cfb7094c3e}{}virtual void {\bfseries push\+Button\+Maximize} ()=0\label{class_main_panel_aba28a15015874114feea84cfb7094c3e}
+
+\item 
+\hypertarget{class_main_panel_af0614a8cb6723ecdc1ec34353e1876f5}{}virtual void {\bfseries push\+Button\+Close} ()=0\label{class_main_panel_af0614a8cb6723ecdc1ec34353e1876f5}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_panel_a1f02146ae9ae2c7555ff6c1b89e1b954}{Main\+Panel} (Q\+Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_panel_afdae445397b557a1b938c5d6fcc79e01}{init} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_main_panel_a948608bd25ee6faf0cc4a8a90c9a26ec}{}Q\+Stacked\+Widget $\ast$ {\bfseries stack}\label{class_main_panel_a948608bd25ee6faf0cc4a8a90c9a26ec}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_main_panel}{Main\+Panel} class. Class to construct the core content of the launcher window. Also moderates interaction between sidebar and stacked content. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_panel_a1f02146ae9ae2c7555ff6c1b89e1b954}{}\index{Main\+Panel@{Main\+Panel}!Main\+Panel@{Main\+Panel}}
+\index{Main\+Panel@{Main\+Panel}!Main\+Panel@{Main\+Panel}}
+\subsubsection[{Main\+Panel(\+Q\+Widget $\ast$parent=0)}]{\setlength{\rightskip}{0pt plus 5cm}Main\+Panel\+::\+Main\+Panel (
+\begin{DoxyParamCaption}
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_main_panel_a1f02146ae9ae2c7555ff6c1b89e1b954}
+\hyperlink{class_main_panel}{Main\+Panel} constructor Sets base size policy and object name. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Pointer to parent widget. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_panel_afdae445397b557a1b938c5d6fcc79e01}{}\index{Main\+Panel@{Main\+Panel}!init@{init}}
+\index{init@{init}!Main\+Panel@{Main\+Panel}}
+\subsubsection[{init()}]{\setlength{\rightskip}{0pt plus 5cm}void Main\+Panel\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_main_panel_afdae445397b557a1b938c5d6fcc79e01}
+Main initializer for the U\+I. Q\+Objects are initialized by depth -\/ back to front. Note that the sidebar is initialized as a derived class. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/Main\+Panel.\+h\item 
+Source/Main\+Panel.\+cpp\end{DoxyCompactItemize}

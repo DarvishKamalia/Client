@@ -1,0 +1,142 @@
+\hypertarget{class_tab_widget}{}\section{Tab\+Widget Class Reference}
+\label{class_tab_widget}\index{Tab\+Widget@{Tab\+Widget}}
+
+
+{\ttfamily \#include $<$Tab\+Widget.\+h$>$}
+
+Inheritance diagram for Tab\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tab_widget}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_widget_a45dd0b763c0110c535359c75a1636689}{}void {\bfseries hovered} ()\label{class_tab_widget_a45dd0b763c0110c535359c75a1636689}
+
+\item 
+\hypertarget{class_tab_widget_a11c66a7e717c4bfb4b2bb25712308f3b}{}void {\bfseries unhovered} ()\label{class_tab_widget_a11c66a7e717c4bfb4b2bb25712308f3b}
+
+\item 
+\hypertarget{class_tab_widget_a616dbbaf08c745779ebceed14e664b1e}{}void {\bfseries clicked} ()\label{class_tab_widget_a616dbbaf08c745779ebceed14e664b1e}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tab_widget_a4d9761222b2af9b1f010fa9a1c06950d}{Tab\+Widget} (const Q\+Pixmap \&icon, const Q\+String \&name, const Q\+String \&text, Q\+Settings $\ast$p, Q\+Widget $\ast$parent=0)
+\item 
+void \hyperlink{class_tab_widget_a22dd3a7f2e5bb36816502a7e8bfec9c8}{enter\+Event} (Q\+Event $\ast$event)
+\item 
+void \hyperlink{class_tab_widget_a1b0a65047f8fb9bf5c67b95c32ae4c0a}{leave\+Event} (Q\+Event $\ast$event)
+\item 
+void \hyperlink{class_tab_widget_a32f538fd47196a94d2ceff7c8040420b}{mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$event)
+\item 
+void \hyperlink{class_tab_widget_ac5ebab9aab84a8521cf8169b3f4599eb}{toggle\+Active} ()
+\item 
+void \hyperlink{class_tab_widget_a15f634c55c675b48c16b997eb7eb4b0f}{toggle\+Inactive} ()
+\item 
+\hypertarget{class_tab_widget_abbf3563cce7077e4d5b21396736f1278}{}qreal {\bfseries get\+Opacity} ()\label{class_tab_widget_abbf3563cce7077e4d5b21396736f1278}
+
+\item 
+\hypertarget{class_tab_widget_a47a7f14a6c8f8d1f27016e0d46683885}{}void {\bfseries set\+Opacity} (qreal val)\label{class_tab_widget_a47a7f14a6c8f8d1f27016e0d46683885}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_tab_widget_a6aa2811f73f9786fa8cf51e493a3f54a}{paint\+Event} (Q\+Paint\+Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_tab_widget_a21a9715954d5da6dcfa503a298586588}{}qreal {\bfseries opacity}\label{class_tab_widget_a21a9715954d5da6dcfa503a298586588}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_tab_widget}{Tab\+Widget} class. Class to handle the construction and behavior of sidebar tabs. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_tab_widget_a4d9761222b2af9b1f010fa9a1c06950d}{}\index{Tab\+Widget@{Tab\+Widget}!Tab\+Widget@{Tab\+Widget}}
+\index{Tab\+Widget@{Tab\+Widget}!Tab\+Widget@{Tab\+Widget}}
+\subsubsection[{Tab\+Widget(const Q\+Pixmap \&icon, const Q\+String \&name, const Q\+String \&text, Q\+Settings $\ast$p, Q\+Widget $\ast$parent=0)}]{\setlength{\rightskip}{0pt plus 5cm}Tab\+Widget\+::\+Tab\+Widget (
+\begin{DoxyParamCaption}
+\item[{const Q\+Pixmap \&}]{icon, }
+\item[{const Q\+String \&}]{name, }
+\item[{const Q\+String \&}]{text, }
+\item[{Q\+Settings $\ast$}]{palette, }
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_tab_widget_a4d9761222b2af9b1f010fa9a1c06950d}
+\hyperlink{class_tab_widget}{Tab\+Widget} constructor Initialize the layout of the tab, as well as colorization settings. 
+\begin{DoxyParams}{Parameters}
+{\em icon} & The pixmap (icon) for this tab. \\
+\hline
+{\em name} & The desired object name for this tab. \\
+\hline
+{\em text} & The text written on this tab. \\
+\hline
+{\em palette} & Inherited palette configuration for setting Style\+Sheets. \\
+\hline
+{\em parent} & Pointer to parent widget. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tab_widget_a22dd3a7f2e5bb36816502a7e8bfec9c8}{}\index{Tab\+Widget@{Tab\+Widget}!enter\+Event@{enter\+Event}}
+\index{enter\+Event@{enter\+Event}!Tab\+Widget@{Tab\+Widget}}
+\subsubsection[{enter\+Event(\+Q\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Tab\+Widget\+::enter\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_tab_widget_a22dd3a7f2e5bb36816502a7e8bfec9c8}
+Overridden enter event. Emits the hover signal for this tab. \hypertarget{class_tab_widget_a1b0a65047f8fb9bf5c67b95c32ae4c0a}{}\index{Tab\+Widget@{Tab\+Widget}!leave\+Event@{leave\+Event}}
+\index{leave\+Event@{leave\+Event}!Tab\+Widget@{Tab\+Widget}}
+\subsubsection[{leave\+Event(\+Q\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Tab\+Widget\+::leave\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_tab_widget_a1b0a65047f8fb9bf5c67b95c32ae4c0a}
+Overridden leave event. Emits the unhover signal for this tab. \hypertarget{class_tab_widget_a32f538fd47196a94d2ceff7c8040420b}{}\index{Tab\+Widget@{Tab\+Widget}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Tab\+Widget@{Tab\+Widget}}
+\subsubsection[{mouse\+Press\+Event(\+Q\+Mouse\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Tab\+Widget\+::mouse\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_tab_widget_a32f538fd47196a94d2ceff7c8040420b}
+Overridden mouse press event. Emits the click signal for this tab. \hypertarget{class_tab_widget_a6aa2811f73f9786fa8cf51e493a3f54a}{}\index{Tab\+Widget@{Tab\+Widget}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Tab\+Widget@{Tab\+Widget}}
+\subsubsection[{paint\+Event(\+Q\+Paint\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Tab\+Widget\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_tab_widget_a6aa2811f73f9786fa8cf51e493a3f54a}
+Overridden paint event. Necessary for displaying stylesheets correctly. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The Q\+Paint\+Event trigger. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_tab_widget_ac5ebab9aab84a8521cf8169b3f4599eb}{}\index{Tab\+Widget@{Tab\+Widget}!toggle\+Active@{toggle\+Active}}
+\index{toggle\+Active@{toggle\+Active}!Tab\+Widget@{Tab\+Widget}}
+\subsubsection[{toggle\+Active()}]{\setlength{\rightskip}{0pt plus 5cm}void Tab\+Widget\+::toggle\+Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_tab_widget_ac5ebab9aab84a8521cf8169b3f4599eb}
+Sets this tab active on the sidebar. \hypertarget{class_tab_widget_a15f634c55c675b48c16b997eb7eb4b0f}{}\index{Tab\+Widget@{Tab\+Widget}!toggle\+Inactive@{toggle\+Inactive}}
+\index{toggle\+Inactive@{toggle\+Inactive}!Tab\+Widget@{Tab\+Widget}}
+\subsubsection[{toggle\+Inactive()}]{\setlength{\rightskip}{0pt plus 5cm}void Tab\+Widget\+::toggle\+Inactive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_tab_widget_a15f634c55c675b48c16b997eb7eb4b0f}
+Sets this tab inactive on the sidebar. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/Tab\+Widget.\+h\item 
+Source/Tab\+Widget.\+cpp\end{DoxyCompactItemize}

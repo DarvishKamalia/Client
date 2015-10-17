@@ -1,0 +1,153 @@
+\hypertarget{class_results_page}{}\section{Results\+Page Class Reference}
+\label{class_results_page}\index{Results\+Page@{Results\+Page}}
+
+
+{\ttfamily \#include $<$D\+R\+M\+Setup\+Wizard.\+h$>$}
+
+Inheritance diagram for Results\+Page\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_results_page}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_results_page_a86c5a589b72b4bd229c8f9eb4bc84534}{tab\+Selected} ()
+\item 
+void \hyperlink{class_results_page_a3e025707664d7a1a5bfd0885b3b31522}{select\+All} ()
+\item 
+void \hyperlink{class_results_page_ac1cb09f124d3a899e635e603824c9ed0}{deselect\+All} ()
+\item 
+void \hyperlink{class_results_page_a2aac8db5fa7334c6cee18f68fdaa585f}{invert} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_results_page_ad973e062d8a7965a856969ec01b3ebae}{Results\+Page} (\hyperlink{class_database}{Database} db, \hyperlink{class_d_r_m_page}{D\+R\+M\+Page} \&drm\+Page, Q\+Widget $\ast$parent=0)
+\item 
+void \hyperlink{class_results_page_ad2a5dce180e18b6dacbfbe53a2681100}{find\+Origin\+Games} ()
+\item 
+void \hyperlink{class_results_page_a246d369ee485e493c2525ea7e2ce0bf6}{find\+Uplay\+Games} ()
+\item 
+void \hyperlink{class_results_page_a91347cd782f80e6d0bfa53314368e6ae}{find\+Steam\+Games} ()
+\item 
+int \hyperlink{class_results_page_a4b89c85a9a8bb6f289fac550512e3130}{next\+Id} () const Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+D\+E
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_results_page_a53e1bbff2baf5d76efa863127feab663}{initialize\+Page} () Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+D\+E
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_results_page}{Results\+Page} class. Class to handle the results of which games have been found. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_results_page_ad973e062d8a7965a856969ec01b3ebae}{}\index{Results\+Page@{Results\+Page}!Results\+Page@{Results\+Page}}
+\index{Results\+Page@{Results\+Page}!Results\+Page@{Results\+Page}}
+\subsubsection[{Results\+Page(\+Database db, D\+R\+M\+Page \&drm\+Page, Q\+Widget $\ast$parent=0)}]{\setlength{\rightskip}{0pt plus 5cm}Results\+Page\+::\+Results\+Page (
+\begin{DoxyParamCaption}
+\item[{{\bf Database}}]{db, }
+\item[{{\bf D\+R\+M\+Page} \&}]{drm\+Page, }
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_results_page_ad973e062d8a7965a856969ec01b3ebae}
+\hyperlink{class_results_page}{Results\+Page} constructor Defines some initial properties for the results page. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_results_page_ac1cb09f124d3a899e635e603824c9ed0}{}\index{Results\+Page@{Results\+Page}!deselect\+All@{deselect\+All}}
+\index{deselect\+All@{deselect\+All}!Results\+Page@{Results\+Page}}
+\subsubsection[{deselect\+All}]{\setlength{\rightskip}{0pt plus 5cm}void Results\+Page\+::deselect\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_results_page_ac1cb09f124d3a899e635e603824c9ed0}
+Slot to set all buttons to unchecked \hypertarget{class_results_page_ad2a5dce180e18b6dacbfbe53a2681100}{}\index{Results\+Page@{Results\+Page}!find\+Origin\+Games@{find\+Origin\+Games}}
+\index{find\+Origin\+Games@{find\+Origin\+Games}!Results\+Page@{Results\+Page}}
+\subsubsection[{find\+Origin\+Games()}]{\setlength{\rightskip}{0pt plus 5cm}void Results\+Page\+::find\+Origin\+Games (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_results_page_ad2a5dce180e18b6dacbfbe53a2681100}
+Using origin\+Root, which is initialized earlier in the wizard, utilize {\ttfamily recursive\+Find\+Files()} to find every executable within each respective directory. Some directories will contain more than one executable, so it\textquotesingle{}s up to the user to select the correct one. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_results_page_a91347cd782f80e6d0bfa53314368e6ae}{find\+Steam\+Games()} 
+
+\hyperlink{class_results_page_a246d369ee485e493c2525ea7e2ce0bf6}{find\+Uplay\+Games()} 
+\end{DoxySeeAlso}
+\hypertarget{class_results_page_a91347cd782f80e6d0bfa53314368e6ae}{}\index{Results\+Page@{Results\+Page}!find\+Steam\+Games@{find\+Steam\+Games}}
+\index{find\+Steam\+Games@{find\+Steam\+Games}!Results\+Page@{Results\+Page}}
+\subsubsection[{find\+Steam\+Games()}]{\setlength{\rightskip}{0pt plus 5cm}void Results\+Page\+::find\+Steam\+Games (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_results_page_a91347cd782f80e6d0bfa53314368e6ae}
+Using steam\+Root, which is initialized earlier in the wizard, find the location of every Steam library folder, and run the parse\+Acf function on every $\ast$.acf file found within the directory. This file gives basic information about the game; such as directory within steamapps, name, etc. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_results_page_ad2a5dce180e18b6dacbfbe53a2681100}{find\+Origin\+Games()} 
+
+\hyperlink{class_results_page_a246d369ee485e493c2525ea7e2ce0bf6}{find\+Uplay\+Games()} 
+\end{DoxySeeAlso}
+\hypertarget{class_results_page_a246d369ee485e493c2525ea7e2ce0bf6}{}\index{Results\+Page@{Results\+Page}!find\+Uplay\+Games@{find\+Uplay\+Games}}
+\index{find\+Uplay\+Games@{find\+Uplay\+Games}!Results\+Page@{Results\+Page}}
+\subsubsection[{find\+Uplay\+Games()}]{\setlength{\rightskip}{0pt plus 5cm}void Results\+Page\+::find\+Uplay\+Games (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_results_page_a246d369ee485e493c2525ea7e2ce0bf6}
+Using uplay\+Root, which is initialized earlier in the wizard, utilize {\ttfamily recursive\+Find\+Files()} to find every executable within each respective directory. Some directories will contain more than one executable, so it\textquotesingle{}s up to the user to select the correct one. \begin{DoxySeeAlso}{See also}
+\hyperlink{class_results_page_a91347cd782f80e6d0bfa53314368e6ae}{find\+Steam\+Games()} 
+
+\hyperlink{class_results_page_ad2a5dce180e18b6dacbfbe53a2681100}{find\+Origin\+Games()} 
+\end{DoxySeeAlso}
+\hypertarget{class_results_page_a53e1bbff2baf5d76efa863127feab663}{}\index{Results\+Page@{Results\+Page}!initialize\+Page@{initialize\+Page}}
+\index{initialize\+Page@{initialize\+Page}!Results\+Page@{Results\+Page}}
+\subsubsection[{initialize\+Page() Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}void Results\+Page\+::initialize\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_results_page_a53e1bbff2baf5d76efa863127feab663}
+Initializes the results page. This function is called when the Next\+Button on the previous page is clicked, which allows the state of the previous page to be transferred to this one. The function then runs each respective check$\ast$\+Exists function, and populates the various sections with correct information. \begin{DoxySeeAlso}{See also}
+check\+Steam\+Exists() 
+
+check\+Uplay\+Exists() 
+
+check\+Origin\+Exists() 
+\end{DoxySeeAlso}
+\hypertarget{class_results_page_a2aac8db5fa7334c6cee18f68fdaa585f}{}\index{Results\+Page@{Results\+Page}!invert@{invert}}
+\index{invert@{invert}!Results\+Page@{Results\+Page}}
+\subsubsection[{invert}]{\setlength{\rightskip}{0pt plus 5cm}void Results\+Page\+::invert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_results_page_a2aac8db5fa7334c6cee18f68fdaa585f}
+Slot to set all buttons to the opposite state \hypertarget{class_results_page_a4b89c85a9a8bb6f289fac550512e3130}{}\index{Results\+Page@{Results\+Page}!next\+Id@{next\+Id}}
+\index{next\+Id@{next\+Id}!Results\+Page@{Results\+Page}}
+\subsubsection[{next\+Id() const Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}int Results\+Page\+::next\+Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_results_page_a4b89c85a9a8bb6f289fac550512e3130}
+Overloads the next\+Id function to add the selected games from the main results widget to a vector called \char`\"{}added\+Vector\char`\"{}, which will be added to the main database at a later point. \begin{DoxySeeAlso}{See also}
+Q\+Wizard\+Page\+::next\+Id() 
+\end{DoxySeeAlso}
+\hypertarget{class_results_page_a3e025707664d7a1a5bfd0885b3b31522}{}\index{Results\+Page@{Results\+Page}!select\+All@{select\+All}}
+\index{select\+All@{select\+All}!Results\+Page@{Results\+Page}}
+\subsubsection[{select\+All}]{\setlength{\rightskip}{0pt plus 5cm}void Results\+Page\+::select\+All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_results_page_a3e025707664d7a1a5bfd0885b3b31522}
+Slot to set all buttons to checked \hypertarget{class_results_page_a86c5a589b72b4bd229c8f9eb4bc84534}{}\index{Results\+Page@{Results\+Page}!tab\+Selected@{tab\+Selected}}
+\index{tab\+Selected@{tab\+Selected}!Results\+Page@{Results\+Page}}
+\subsubsection[{tab\+Selected}]{\setlength{\rightskip}{0pt plus 5cm}void Results\+Page\+::tab\+Selected (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [slot]}}\label{class_results_page_a86c5a589b72b4bd229c8f9eb4bc84534}
+Slot to update the title based upon the tab. Steam (yet) doesn\textquotesingle{}t generate multiple executables, so the 2nd part isn\textquotesingle{}t needed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/D\+R\+M\+Setup\+Wizard.\+h\item 
+Source/D\+R\+M\+Setup\+Wizard.\+cpp\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['community',['Community',['../db/dee/class_community.html',1,'']]]
+  ['community',['Community',['../class_community.html',1,'']]]
 ];

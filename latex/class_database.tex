@@ -1,0 +1,228 @@
+\hypertarget{class_database}{}\section{Database Class Reference}
+\label{class_database}\index{Database@{Database}}
+
+
+{\ttfamily \#include $<$Database.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_a4703c80e6969d33565ea340f768fdadf}{Database} ()
+\item 
+\hypertarget{class_database_ab9f6de56a252d6a2b637ad07908c706f}{}{\bfseries Database} (Q\+String name)\label{class_database_ab9f6de56a252d6a2b637ad07908c706f}
+
+\item 
+bool \hyperlink{class_database_a7c8d83dd74fe50ae3c261479235c702a}{init} ()
+\item 
+bool \hyperlink{class_database_aec44429a48d0b909cad5edee2539bccf}{reset} ()
+\item 
+bool \hyperlink{class_database_ade517bf453e5563aced153157a28ac02}{add\+Game} (Q\+String game\+Name, Q\+String game\+Directory, Q\+String executable\+Path, Q\+String arguments)
+\item 
+void \hyperlink{class_database_af780b78b83cf0c6e170e3ca21141acfc}{add\+Games} (Game\+List games)
+\item 
+bool \hyperlink{class_database_af01f04fa637918a199045a4d8e67ebe5}{remove\+Game\+By\+Id} (unsigned int id)
+\item 
+bool \hyperlink{class_database_a6523dbf229c96c88e13ef3945ad01f3b}{remove\+Game\+By\+Name} (Q\+String name)
+\item 
+\hyperlink{struct_game}{Game} \hyperlink{class_database_af4fd31e1db1e8611cb916c3dc1013099}{get\+Game\+By\+Id} (unsigned int id)
+\item 
+\hyperlink{struct_game}{Game} \hyperlink{class_database_ad8c60f1c8a4883a338d1d5183d40f90f}{get\+Game\+By\+Name} (Q\+String name)
+\item 
+std\+::pair$<$ bool, \hyperlink{struct_game}{Game} $>$ \hyperlink{class_database_a3a371b6396ecc4d6bb8b9e77c6257b51}{is\+Existant} (unsigned int id)
+\item 
+std\+::pair$<$ bool, \hyperlink{struct_game}{Game} $>$ \hyperlink{class_database_a7a0d78f1152ffe49cd711403c5306120}{is\+Existant} (Q\+String name)
+\item 
+Q\+List$<$ \hyperlink{struct_game}{Game} $>$ \hyperlink{class_database_a55b96f4463d01abb466546fa1058a44f}{get\+Games} ()
+\item 
+unsigned int \hyperlink{class_database_a7951029b2169460d090b7e6bad2ef030}{get\+Game\+Count} () const 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_database}{Database} class. Wrapper class to manage the internal game database. Also has a simple interface to find games by certain conditions. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_database_a4703c80e6969d33565ea340f768fdadf}{}\index{Database@{Database}!Database@{Database}}
+\index{Database@{Database}!Database@{Database}}
+\subsubsection[{Database()}]{\setlength{\rightskip}{0pt plus 5cm}Database\+::\+Database (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_a4703c80e6969d33565ea340f768fdadf}
+\hyperlink{class_database}{Database} constructor Constructs the local database. Currently no interface to handle remote databases, just creates one in the current working directory. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_database_ade517bf453e5563aced153157a28ac02}{}\index{Database@{Database}!add\+Game@{add\+Game}}
+\index{add\+Game@{add\+Game}!Database@{Database}}
+\subsubsection[{add\+Game(\+Q\+String game\+Name, Q\+String game\+Directory, Q\+String executable\+Path, Q\+String arguments)}]{\setlength{\rightskip}{0pt plus 5cm}bool Database\+::add\+Game (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{game\+Name, }
+\item[{Q\+String}]{game\+Directory, }
+\item[{Q\+String}]{executable\+Path, }
+\item[{Q\+String}]{arguments}
+\end{DoxyParamCaption}
+)}\label{class_database_ade517bf453e5563aced153157a28ac02}
+Add a game to the database and repopulate the games list. 
+\begin{DoxyParams}{Parameters}
+{\em game\+Name} & The name of the game. \\
+\hline
+{\em game\+Directory} & Working directory of the game. \\
+\hline
+{\em executable\+Path} & The location of the executable on the filesystem. \\
+\hline
+{\em arguments} & List of arguments to launch with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success/failure of the operation. 
+\end{DoxyReturn}
+\hypertarget{class_database_af780b78b83cf0c6e170e3ca21141acfc}{}\index{Database@{Database}!add\+Games@{add\+Games}}
+\index{add\+Games@{add\+Games}!Database@{Database}}
+\subsubsection[{add\+Games(\+Game\+List games)}]{\setlength{\rightskip}{0pt plus 5cm}void Database\+::add\+Games (
+\begin{DoxyParamCaption}
+\item[{Game\+List}]{games}
+\end{DoxyParamCaption}
+)}\label{class_database_af780b78b83cf0c6e170e3ca21141acfc}
+Add games to the database and repopulate the games list. 
+\begin{DoxyParams}{Parameters}
+{\em games} & Game\+List of games to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success/failure of the operation. 
+\end{DoxyReturn}
+\hypertarget{class_database_af4fd31e1db1e8611cb916c3dc1013099}{}\index{Database@{Database}!get\+Game\+By\+Id@{get\+Game\+By\+Id}}
+\index{get\+Game\+By\+Id@{get\+Game\+By\+Id}!Database@{Database}}
+\subsubsection[{get\+Game\+By\+Id(unsigned int id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game} Database\+::get\+Game\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{id}
+\end{DoxyParamCaption}
+)}\label{class_database_af4fd31e1db1e8611cb916c3dc1013099}
+Wrapper to access the \hyperlink{struct_game}{Game} object from the I\+D. 
+\begin{DoxyParams}{Parameters}
+{\em id} & I\+D to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_game}{Game} object, empty upon failure. 
+\end{DoxyReturn}
+\hypertarget{class_database_ad8c60f1c8a4883a338d1d5183d40f90f}{}\index{Database@{Database}!get\+Game\+By\+Name@{get\+Game\+By\+Name}}
+\index{get\+Game\+By\+Name@{get\+Game\+By\+Name}!Database@{Database}}
+\subsubsection[{get\+Game\+By\+Name(\+Q\+String name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Game} Database\+::get\+Game\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{name}
+\end{DoxyParamCaption}
+)}\label{class_database_ad8c60f1c8a4883a338d1d5183d40f90f}
+Wrapper to access the \hyperlink{struct_game}{Game} object from the name. 
+\begin{DoxyParams}{Parameters}
+{\em id} & I\+D to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_game}{Game} object, empty upon failure. 
+\end{DoxyReturn}
+\hypertarget{class_database_a7951029b2169460d090b7e6bad2ef030}{}\index{Database@{Database}!get\+Game\+Count@{get\+Game\+Count}}
+\index{get\+Game\+Count@{get\+Game\+Count}!Database@{Database}}
+\subsubsection[{get\+Game\+Count() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Database\+::get\+Game\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_database_a7951029b2169460d090b7e6bad2ef030}
+Queries the database to find the number of games. \begin{DoxyReturn}{Returns}
+Total number of games stored so far. 
+\end{DoxyReturn}
+\hypertarget{class_database_a55b96f4463d01abb466546fa1058a44f}{}\index{Database@{Database}!get\+Games@{get\+Games}}
+\index{get\+Games@{get\+Games}!Database@{Database}}
+\subsubsection[{get\+Games()}]{\setlength{\rightskip}{0pt plus 5cm}Q\+List$<$ {\bf Game} $>$ Database\+::get\+Games (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_a55b96f4463d01abb466546fa1058a44f}
+Perform a query to find every game in the database. \begin{DoxyReturn}{Returns}
+A Q\+List of \hyperlink{struct_game}{Game} objects containing everything in the database. 
+\end{DoxyReturn}
+\hypertarget{class_database_a7c8d83dd74fe50ae3c261479235c702a}{}\index{Database@{Database}!init@{init}}
+\index{init@{init}!Database@{Database}}
+\subsubsection[{init()}]{\setlength{\rightskip}{0pt plus 5cm}bool Database\+::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_a7c8d83dd74fe50ae3c261479235c702a}
+Initialize the actual database, if it hasn\textquotesingle{}t been done already. \begin{DoxyReturn}{Returns}
+Success/failure of the operation. 
+\end{DoxyReturn}
+\hypertarget{class_database_a3a371b6396ecc4d6bb8b9e77c6257b51}{}\index{Database@{Database}!is\+Existant@{is\+Existant}}
+\index{is\+Existant@{is\+Existant}!Database@{Database}}
+\subsubsection[{is\+Existant(unsigned int id)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$ bool, {\bf Game} $>$ Database\+::is\+Existant (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{id}
+\end{DoxyParamCaption}
+)}\label{class_database_a3a371b6396ecc4d6bb8b9e77c6257b51}
+Perform a query to find a specific game in the database by their I\+D. Unsafe at the moment. 
+\begin{DoxyParams}{Parameters}
+{\em id} & I\+D of the game to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_game}{Game} object upon success, 0 upon failure. 
+\end{DoxyReturn}
+\hypertarget{class_database_a7a0d78f1152ffe49cd711403c5306120}{}\index{Database@{Database}!is\+Existant@{is\+Existant}}
+\index{is\+Existant@{is\+Existant}!Database@{Database}}
+\subsubsection[{is\+Existant(\+Q\+String name)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::pair$<$ bool, {\bf Game} $>$ Database\+::is\+Existant (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{name}
+\end{DoxyParamCaption}
+)}\label{class_database_a7a0d78f1152ffe49cd711403c5306120}
+Perform a query to find a specific game by their name (soon to be deprecated).
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the game to find. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A \hyperlink{struct_game}{Game} object upon success, 0 upon failure. 
+\end{DoxyReturn}
+\hypertarget{class_database_af01f04fa637918a199045a4d8e67ebe5}{}\index{Database@{Database}!remove\+Game\+By\+Id@{remove\+Game\+By\+Id}}
+\index{remove\+Game\+By\+Id@{remove\+Game\+By\+Id}!Database@{Database}}
+\subsubsection[{remove\+Game\+By\+Id(unsigned int id)}]{\setlength{\rightskip}{0pt plus 5cm}bool Database\+::remove\+Game\+By\+Id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{id}
+\end{DoxyParamCaption}
+)}\label{class_database_af01f04fa637918a199045a4d8e67ebe5}
+Remove a game from the database by their I\+D. 
+\begin{DoxyParams}{Parameters}
+{\em id} & I\+D of the game to remove. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Success/failure of the operation. 
+\end{DoxyReturn}
+\hypertarget{class_database_a6523dbf229c96c88e13ef3945ad01f3b}{}\index{Database@{Database}!remove\+Game\+By\+Name@{remove\+Game\+By\+Name}}
+\index{remove\+Game\+By\+Name@{remove\+Game\+By\+Name}!Database@{Database}}
+\subsubsection[{remove\+Game\+By\+Name(\+Q\+String name)}]{\setlength{\rightskip}{0pt plus 5cm}bool Database\+::remove\+Game\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{Q\+String}]{name}
+\end{DoxyParamCaption}
+)}\label{class_database_a6523dbf229c96c88e13ef3945ad01f3b}
+Remove a game from the database by their name. 
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the game to remove. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_database_aec44429a48d0b909cad5edee2539bccf}{}\index{Database@{Database}!reset@{reset}}
+\index{reset@{reset}!Database@{Database}}
+\subsubsection[{reset()}]{\setlength{\rightskip}{0pt plus 5cm}bool Database\+::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_aec44429a48d0b909cad5edee2539bccf}
+Remove every table in the database. \begin{DoxyReturn}{Returns}
+Success/failure of the operation. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/Database.\+h\item 
+Source/Database.\+cpp\end{DoxyCompactItemize}

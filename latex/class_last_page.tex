@@ -1,0 +1,57 @@
+\hypertarget{class_last_page}{}\section{Last\+Page Class Reference}
+\label{class_last_page}\index{Last\+Page@{Last\+Page}}
+
+
+{\ttfamily \#include $<$Add\+Game\+Wizard.\+h$>$}
+
+Inheritance diagram for Last\+Page\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_last_page}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_last_page_afe215be6054574643680d3d92675076f}{Last\+Page} (\hyperlink{class_database}{Database} db, Q\+Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_last_page_a1dff924481806ed90ce21c2153e3898e}{initialize\+Page} () Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+D\+E
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_last_page}{Last\+Page} class Class to handle the last page 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_last_page_afe215be6054574643680d3d92675076f}{}\index{Last\+Page@{Last\+Page}!Last\+Page@{Last\+Page}}
+\index{Last\+Page@{Last\+Page}!Last\+Page@{Last\+Page}}
+\subsubsection[{Last\+Page(\+Database db, Q\+Widget $\ast$parent=0)}]{\setlength{\rightskip}{0pt plus 5cm}Last\+Page\+::\+Last\+Page (
+\begin{DoxyParamCaption}
+\item[{{\bf Database}}]{db, }
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_last_page_afe215be6054574643680d3d92675076f}
+\hyperlink{class_info_page}{Info\+Page} constructor Defines some initial properties for the page in which the user will input the game\textquotesingle{}s information. 
+\begin{DoxyParams}{Parameters}
+{\em parent} & Parent widget to draw from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_last_page_a1dff924481806ed90ce21c2153e3898e}{}\index{Last\+Page@{Last\+Page}!initialize\+Page@{initialize\+Page}}
+\index{initialize\+Page@{initialize\+Page}!Last\+Page@{Last\+Page}}
+\subsubsection[{initialize\+Page() Q\+\_\+\+D\+E\+C\+L\+\_\+\+O\+V\+E\+R\+R\+I\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}void Last\+Page\+::initialize\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_last_page_a1dff924481806ed90ce21c2153e3898e}
+Initializes the last page. This function is called when the Next\+Button on the previous page is clicked, which allows the state of the previous page to be transferred to this one. The function checks if the game already exists in the database, and if not, adds that game. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/Add\+Game\+Wizard.\+h\item 
+Source/Add\+Game\+Wizard.\+cpp\end{DoxyCompactItemize}

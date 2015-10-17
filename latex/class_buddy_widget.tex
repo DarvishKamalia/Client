@@ -1,0 +1,142 @@
+\hypertarget{class_buddy_widget}{}\section{Buddy\+Widget Class Reference}
+\label{class_buddy_widget}\index{Buddy\+Widget@{Buddy\+Widget}}
+
+
+{\ttfamily \#include $<$Buddy\+Widget.\+h$>$}
+
+Inheritance diagram for Buddy\+Widget\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_buddy_widget}
+\end{center}
+\end{figure}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_buddy_widget_a7ab167f06ebc6aad64599c1c8ceb810a}{}void {\bfseries hovered} ()\label{class_buddy_widget_a7ab167f06ebc6aad64599c1c8ceb810a}
+
+\item 
+\hypertarget{class_buddy_widget_a9a13384faca554b417c50fcdaa9c438f}{}void {\bfseries unhovered} ()\label{class_buddy_widget_a9a13384faca554b417c50fcdaa9c438f}
+
+\item 
+\hypertarget{class_buddy_widget_a96c77c847ce1e03786f5ba15d4653e05}{}void {\bfseries clicked} ()\label{class_buddy_widget_a96c77c847ce1e03786f5ba15d4653e05}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_buddy_widget_adbd623b008c65aa0b7a148fecc263710}{Buddy\+Widget} (const Q\+Pixmap \&icon, const Q\+String \&name, const Q\+String \&text, Q\+Settings $\ast$p, Q\+Widget $\ast$parent=0)
+\item 
+void \hyperlink{class_buddy_widget_a3779931e78f94335f069f47c483e28d3}{enter\+Event} (Q\+Event $\ast$event)
+\item 
+void \hyperlink{class_buddy_widget_a496d7edf41c9139e85bcf20cdf9aea6c}{leave\+Event} (Q\+Event $\ast$event)
+\item 
+void \hyperlink{class_buddy_widget_a9b69b6f6ef58b90b345ffb754bebba63}{mouse\+Press\+Event} (Q\+Mouse\+Event $\ast$event)
+\item 
+void \hyperlink{class_buddy_widget_a639b5917737294f52565e3b464e393a0}{toggle\+Active} ()
+\item 
+void \hyperlink{class_buddy_widget_ab52f4fb2432dedb66c18e80e282d894c}{toggle\+Inactive} ()
+\item 
+\hypertarget{class_buddy_widget_a09860a984b8a8dd674a714b3fe7cf1b5}{}qreal {\bfseries get\+Opacity} ()\label{class_buddy_widget_a09860a984b8a8dd674a714b3fe7cf1b5}
+
+\item 
+\hypertarget{class_buddy_widget_a7b68f49546a10fcbd1d30553ea1b801b}{}void {\bfseries set\+Opacity} (qreal val)\label{class_buddy_widget_a7b68f49546a10fcbd1d30553ea1b801b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_buddy_widget_a61f6d8d680ffea3ed7efc8889f0e5236}{paint\+Event} (Q\+Paint\+Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_buddy_widget_a10b9b549e1a7f311026a06805bf1f6c3}{}qreal {\bfseries opacity}\label{class_buddy_widget_a10b9b549e1a7f311026a06805bf1f6c3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_buddy_widget}{Buddy\+Widget} class. Class to handle the construction and behavior of sidebar tabs. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_buddy_widget_adbd623b008c65aa0b7a148fecc263710}{}\index{Buddy\+Widget@{Buddy\+Widget}!Buddy\+Widget@{Buddy\+Widget}}
+\index{Buddy\+Widget@{Buddy\+Widget}!Buddy\+Widget@{Buddy\+Widget}}
+\subsubsection[{Buddy\+Widget(const Q\+Pixmap \&icon, const Q\+String \&name, const Q\+String \&text, Q\+Settings $\ast$p, Q\+Widget $\ast$parent=0)}]{\setlength{\rightskip}{0pt plus 5cm}Buddy\+Widget\+::\+Buddy\+Widget (
+\begin{DoxyParamCaption}
+\item[{const Q\+Pixmap \&}]{icon, }
+\item[{const Q\+String \&}]{name, }
+\item[{const Q\+String \&}]{text, }
+\item[{Q\+Settings $\ast$}]{palette, }
+\item[{Q\+Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_buddy_widget_adbd623b008c65aa0b7a148fecc263710}
+\hyperlink{class_buddy_widget}{Buddy\+Widget} constructor Initialize the layout of the tab, as well as colorization settings. 
+\begin{DoxyParams}{Parameters}
+{\em icon} & The pixmap (icon) for this tab. \\
+\hline
+{\em name} & The desired object name for this tab. \\
+\hline
+{\em text} & The text written on this tab. \\
+\hline
+{\em palette} & Inherited palette configuration for setting Style\+Sheets. \\
+\hline
+{\em parent} & Pointer to parent widget. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_buddy_widget_a3779931e78f94335f069f47c483e28d3}{}\index{Buddy\+Widget@{Buddy\+Widget}!enter\+Event@{enter\+Event}}
+\index{enter\+Event@{enter\+Event}!Buddy\+Widget@{Buddy\+Widget}}
+\subsubsection[{enter\+Event(\+Q\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Buddy\+Widget\+::enter\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_buddy_widget_a3779931e78f94335f069f47c483e28d3}
+Overridden enter event. Emits the hover signal for this tab. \hypertarget{class_buddy_widget_a496d7edf41c9139e85bcf20cdf9aea6c}{}\index{Buddy\+Widget@{Buddy\+Widget}!leave\+Event@{leave\+Event}}
+\index{leave\+Event@{leave\+Event}!Buddy\+Widget@{Buddy\+Widget}}
+\subsubsection[{leave\+Event(\+Q\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Buddy\+Widget\+::leave\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_buddy_widget_a496d7edf41c9139e85bcf20cdf9aea6c}
+Overridden leave event. Emits the unhover signal for this tab. \hypertarget{class_buddy_widget_a9b69b6f6ef58b90b345ffb754bebba63}{}\index{Buddy\+Widget@{Buddy\+Widget}!mouse\+Press\+Event@{mouse\+Press\+Event}}
+\index{mouse\+Press\+Event@{mouse\+Press\+Event}!Buddy\+Widget@{Buddy\+Widget}}
+\subsubsection[{mouse\+Press\+Event(\+Q\+Mouse\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Buddy\+Widget\+::mouse\+Press\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Mouse\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)}\label{class_buddy_widget_a9b69b6f6ef58b90b345ffb754bebba63}
+Overridden mouse press event. Emits the click signal for this tab. \hypertarget{class_buddy_widget_a61f6d8d680ffea3ed7efc8889f0e5236}{}\index{Buddy\+Widget@{Buddy\+Widget}!paint\+Event@{paint\+Event}}
+\index{paint\+Event@{paint\+Event}!Buddy\+Widget@{Buddy\+Widget}}
+\subsubsection[{paint\+Event(\+Q\+Paint\+Event $\ast$event)}]{\setlength{\rightskip}{0pt plus 5cm}void Buddy\+Widget\+::paint\+Event (
+\begin{DoxyParamCaption}
+\item[{Q\+Paint\+Event $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_buddy_widget_a61f6d8d680ffea3ed7efc8889f0e5236}
+Overridden paint event. Necessary for displaying stylesheets correctly. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The Q\+Paint\+Event trigger. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_buddy_widget_a639b5917737294f52565e3b464e393a0}{}\index{Buddy\+Widget@{Buddy\+Widget}!toggle\+Active@{toggle\+Active}}
+\index{toggle\+Active@{toggle\+Active}!Buddy\+Widget@{Buddy\+Widget}}
+\subsubsection[{toggle\+Active()}]{\setlength{\rightskip}{0pt plus 5cm}void Buddy\+Widget\+::toggle\+Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_buddy_widget_a639b5917737294f52565e3b464e393a0}
+Sets this tab active on the sidebar. \hypertarget{class_buddy_widget_ab52f4fb2432dedb66c18e80e282d894c}{}\index{Buddy\+Widget@{Buddy\+Widget}!toggle\+Inactive@{toggle\+Inactive}}
+\index{toggle\+Inactive@{toggle\+Inactive}!Buddy\+Widget@{Buddy\+Widget}}
+\subsubsection[{toggle\+Inactive()}]{\setlength{\rightskip}{0pt plus 5cm}void Buddy\+Widget\+::toggle\+Inactive (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_buddy_widget_ab52f4fb2432dedb66c18e80e282d894c}
+Sets this tab inactive on the sidebar. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Source/Buddy\+Widget.\+h\item 
+Source/Buddy\+Widget.\+cpp\end{DoxyCompactItemize}
